@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | RentEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Rent<span>Ease</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="about.html">About</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h1 class="section-title">Contact Us</h1>
+
+  <form class="form-card" onsubmit="sendContact(event)">
+    <label>Name</label>
+    <input type="text" id="contactName" required>
+
+    <label>Email</label>
+    <input type="email" id="contactEmail" required>
+
+    <label>Message</label>
+    <textarea id="contactMessage" rows="4" required></textarea>
+
+    <button type="submit" class="btn primary full">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© 2026 RentEase | Semester Project</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

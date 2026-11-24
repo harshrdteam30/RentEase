@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | RentEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Rent<span>Ease</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+</header>
+
+<section class="auth-section">
+  <form class="form-card" onsubmit="loginUser(event)">
+    <h2>Login to RentEase</h2>
+
+    <label>Email</label>
+    <input type="email" id="email" required>
+
+    <label>Password</label>
+    <input type="password" id="password" required>
+
+    <button type="submit" class="btn primary full">Login</button>
+
+    <p class="form-note">
+      New user? <a href="signup.html">Create an account</a>
+    </p>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© 2026 RentEase | Semester Project</p>
+</footer>
+
+<script src="js/auth.js"></script>
+</body>
+</html>
