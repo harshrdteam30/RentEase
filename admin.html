@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin | RentEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Rent<span>Ease</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h1 class="section-title">Admin Dashboard</h1>
+
+  <div class="content-card">
+    <p><strong>Demo Admin Password:</strong> admin123</p>
+
+    <input type="password" id="adminPassword" placeholder="Enter admin password">
+    <button class="btn primary" onclick="openAdmin()">Login as Admin</button>
+  </div>
+
+  <div id="adminPanel" class="hidden">
+    <h2>Booking Requests</h2>
+    <div id="bookingList" class="cart-list"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 RentEase | Semester Project</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

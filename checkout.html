@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | RentEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Rent<span>Ease</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="categories.html">Categories</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h1 class="section-title">Booking Details</h1>
+
+  <form class="form-card" onsubmit="submitBooking(event)">
+    <label>Full Name</label>
+    <input type="text" id="bookingName" required>
+
+    <label>Email</label>
+    <input type="email" id="bookingEmail" required>
+
+    <label>Phone Number</label>
+    <input type="tel" id="bookingPhone" required>
+
+    <label>Rental Start Date</label>
+    <input type="date" id="startDate" required>
+
+    <label>Rental End Date</label>
+    <input type="date" id="endDate" required>
+
+    <label>Delivery Address</label>
+    <textarea id="address" rows="3" required></textarea>
+
+    <button type="submit" class="btn primary full">Confirm Booking Request</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <p>© 2026 RentEase | Semester Project</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
